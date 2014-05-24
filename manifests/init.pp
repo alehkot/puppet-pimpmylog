@@ -10,10 +10,4 @@ class pimpmylog(
     onlyif  => "test ! -d ${location}"
   }
 
-  # file { $location:
-  #   replace => no,
-  #   ensure  => directory,
-  #   mode    => 775
-  # }
-
 }
