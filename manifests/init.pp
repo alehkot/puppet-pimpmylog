@@ -1,6 +1,6 @@
 # == Class: pimpmylog
 #
-# This class installs the opcachegui package along with the necessary configuration.
+# This class installs the pimpmylog package along with the necessary configuration.
 #
 # === Examples
 #
@@ -8,7 +8,7 @@
 #
 # === Requirements
 #
-class pimpmylog ( $settings ) {
+class pimpmylog () {
 
   exec { 'exec mkdir -p /usr/share/php/pimpmylog/source':
     command => "mkdir -p /usr/share/php/pimpmylog/source",
