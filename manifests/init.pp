@@ -24,6 +24,6 @@ class pimpmylog () {
   exec { 'php-move-pimpmylog':
     command => "cp -r /tmp/pimpmylog/* /usr/share/php/pimpmylog/source",
     creates => "/usr/share/php/pimpmylog/source/index.php",
-    require => [ Exec["php-extract-pimpmylog"], Exec["exec mkdir -p /usr/share/php/pimpmylog/source"] ],
+    require => [ Exec["php-download-pimpmylog"], Exec["exec mkdir -p /usr/share/php/pimpmylog/source"] ],
   }
 } 
